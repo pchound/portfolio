@@ -1,0 +1,145 @@
+#menu-icon
+{
+    cursor: pointer;
+    z-index: 1;
+    position: absolute; 
+    top: 5%;
+    left: 5%;
+}
+
+.bar
+{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bar :last-child
+{
+    height: 1px;
+}
+
+#menu-icon > span:last-child
+{
+    height: 2px;
+}
+
+.side-nav-div
+{
+    
+}
+
+.side-nav
+{
+    position: fixed;
+    left: -100%;
+    top: -20px;
+    
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(0,.08,0,1.02);
+    list-style-type: none;
+    padding: 20px;
+    z-index: 2;
+
+
+
+    background: rgb(83, 15, 113);
+
+}
+
+.side-nav.active
+{
+    left: 0;
+}
+
+
+.side-nav li a:visited, a:link
+{
+    position: relative;
+    font-family: monospace;
+    padding: 5px;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    width: 150px;
+    padding-left: 50px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+}
+@media screen and (min-width: 380px)
+{
+    .side-nav li a:visited, a:link
+    {
+        width: 240px;
+        font-size: 1.2em;
+    }
+}
+
+.side-nav li a:hover
+{
+    background-color: rgb(126, 1, 126);
+    transition: 0.2s;
+}
+
+.side-nav li:first-child > a
+{
+    border: none;
+}
+
+.side-nav li:nth-child(2) > a
+{
+    margin-top: 10px;
+}
+
+.side-nav li:last-child > a
+{
+    margin-bottom: 10px;
+    border: none;
+}
+
+.exit
+{
+    width: 30px;
+    height: 30px;
+  
+    cursor: pointer;
+   
+    position: relative;
+    display: block;
+    text-align: center;
+    left: 91%;
+
+
+    
+}
+
+.exit:hover
+{
+    background-color: rgb(80, 80, 80);
+}
+
+.exit:before{
+    content:'';
+    height: 20px;
+    position: absolute;
+    border-left: 2px solid white;
+    transform: rotate(45deg);
+   
+}
+.exit:after{
+    content:'';
+    height: 20px;
+    position: absolute;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+.exit:before, .exit:after
+{
+    top: 5px;
+}

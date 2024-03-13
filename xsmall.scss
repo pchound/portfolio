@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    
+    background: rgb(42,42,42);
+    background: -moz-linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
+    background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#535353",GradientType=1);
+    background-size: cover;
+    
+
+  }
+
+ 
+  .content
+  {
+   
+  }
+  .greeting
+  {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .section-header
+  {
+    background-color: #52070a;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .section-h4
+  {
+    text-align: center;
+  }
+
+  .section
+  {
+    background-color: gray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .section-plans
+  {
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+  }
+  .sub-section
+  {
+    background-color: rgb(255, 255, 255);
+   
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    color: black;
+    border-radius: 10px;
+    height: 150px;
+    padding-bottom: 30px;
+    
+  }
+
+  .section:last-child
+  {
+    margin-bottom: 30px;
+  }
+  .sub-section-header
+  {
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  
+  .sub-section p
+  {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sub-section li
+  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+
+  .sub-section ul
+  {
+    font-size: .8em;
+    
+  }
+  .sub-section h3
+  {
+    text-align: center;
+    color:rgb(160, 160, 160);
+  }
+
+
+  form
+  {
+    text-align: center;
+    display: block;
+    
+  }
+.paypal-button
+  {
+    
+   
+  }
+
+  #logo
+  {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+ 
+  }
+
+  .gradient-overlay
+  {
+    position: absolute; 
+    bottom: 0; 
+      /*background: #C33764;  
+      background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+      background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));*/
+      background: rgb(47,9,84);
+      background: -moz-linear-gradient(0deg, rgba(47,9,84,0.8715861344537815) 0%, rgba(129,21,58,1) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(47,9,84,0.8715861344537815) 0%, rgba(129,21,58,1) 100%);
+      background: linear-gradient(0deg, rgba(47,9,84,0.8715861344537815) 0%, rgba(129,21,58,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f0954",endColorstr="#81153a",GradientType=1);
+
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+  
+  }
+  .intro-img
+  {
+  display: block;
+    height: 100%;
+    width:  100%;
+    object-fit: cover;
+
+  }
+
+
+  .header {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+
+  }
+  
+
+  
+
+  .progress-bar {
+    position: fixed;
+    border-radius: 4px;
+    height: 6px;
+    width: 100%;
+    display: flex;
+    opacity: .8;
+    border-radius: 20px;
+    z-index:4;
+
+    background: rgb(255,171,0);
+    background: -moz-linear-gradient(90deg, rgba(255,171,0,1) 0%, rgba(128,0,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,171,0,1) 0%, rgba(128,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,171,0,1) 0%, rgba(128,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffab00",endColorstr="#8000ff",GradientType=1);
+    content: "";
+    width: 100%;
+  }
+
+  .content {
+
+    margin: auto auto 0 auto;
+    width: 90%;
+  }
+
+  #year_clock
+  {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: .8em;
+  }
