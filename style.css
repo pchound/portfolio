@@ -1,23 +1,277 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - input.scss
+#menu-icon {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  left: 5%; }
 
-Backtrace:
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby31-x64/bin/sass:32:in `load'
-C:/Ruby31-x64/bin/sass:32:in `<main>'
-*/
-body:before {
-  white-space: pre;
+.bar {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.bar :last-child {
+  height: 1px; }
+
+#menu-icon > span:last-child {
+  height: 2px; }
+
+.side-nav {
+  position: fixed;
+  left: -100%;
+  top: -20px;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0, 0.08, 0, 1.02);
+  list-style-type: none;
+  padding: 20px;
+  z-index: 2;
+  background: #530f71; }
+
+.side-nav.active {
+  left: 0; }
+
+.side-nav li a:visited, a:link {
+  position: relative;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - input.scss"; }
+  padding: 5px;
+  color: #fffefe;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  width: 150px;
+  padding-left: 50px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; }
+
+@media screen and (min-width: 380px) {
+  .side-nav li a:visited, a:link {
+    width: 240px;
+    font-size: 1.2em; } }
+.side-nav li a:hover {
+  background-color: #7e017e;
+  transition: 0.2s; }
+
+.side-nav li:first-child > a {
+  border: none; }
+
+.side-nav li:nth-child(2) > a {
+  margin-top: 10px; }
+
+.side-nav li:last-child > a {
+  margin-bottom: 10px;
+  border: none; }
+
+.exit {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-align: center;
+  left: 91%; }
+
+.exit:hover {
+  background-color: #505050; }
+
+.exit:before {
+  content: '';
+  height: 20px;
+  position: absolute;
+  border-left: 2px solid white;
+  transform: rotate(45deg); }
+
+.exit:after {
+  content: '';
+  height: 20px;
+  position: absolute;
+  border-left: 2px solid white;
+  transform: rotate(-45deg); }
+
+.exit:before, .exit:after {
+  top: 5px; }
+
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: #2a2a2a;
+  background: -moz-linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
+  background: -webkit-linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
+  background: linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#535353",GradientType=1);
+  background-size: cover; }
+
+.greeting {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 2em; }
+
+.section-header {
+  background-color: #52070a;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px 10px 0px 0px; }
+
+.section-h4 {
+  text-align: center; }
+
+.section {
+  background-color: gray;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px; }
+
+.section-plans {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.sub-section {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  color: black;
+  border-radius: 10px;
+  height: 150px;
+  padding-bottom: 30px; }
+
+.section:last-child {
+  margin-bottom: 30px; }
+
+.sub-section-header {
+  border-radius: 10px 10px 0px 0px;
+  background-color: #3f3f3f;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 1.2em; }
+
+.sub-section p {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.sub-section li {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.sub-section ul {
+  font-size: .8em; }
+
+.sub-section h3 {
+  text-align: center;
+  color: #a0a0a0; }
+
+form {
+  text-align: center;
+  display: block; }
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+  margin-top: 40px; }
+
+.container {
+  position: relative;
+  width: 100%; }
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  /*background: #C33764;  
+  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));*/
+  background: #2f0954;
+  background: -moz-linear-gradient(0deg, rgba(47, 9, 84, 0.8715861345) 0%, #81153a 100%);
+  background: -webkit-linear-gradient(0deg, rgba(47, 9, 84, 0.8715861345) 0%, #81153a 100%);
+  background: linear-gradient(0deg, rgba(47, 9, 84, 0.8715861345) 0%, #81153a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f0954",endColorstr="#81153a",GradientType=1);
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.intro-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1; }
+
+.progress-bar {
+  position: fixed;
+  border-radius: 4px;
+  height: 6px;
+  width: 100%;
+  display: flex;
+  opacity: .8;
+  border-radius: 20px;
+  z-index: 4;
+  background: #ffab00;
+  background: -moz-linear-gradient(90deg, #ffab00 0%, #8000ff 100%);
+  background: -webkit-linear-gradient(90deg, #ffab00 0%, #8000ff 100%);
+  background: linear-gradient(90deg, #ffab00 0%, #8000ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffab00",endColorstr="#8000ff",GradientType=1);
+  content: "";
+  width: 100%; }
+
+.content {
+  margin: auto auto 0 auto;
+  width: 90%; }
+
+#year_clock {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: .8em; }
+
+@media screen and (min-width: 380px) {
+  .greeting {
+    font-size: 3em; }
+
+  .sub-section {
+    width: 250px; } }
+@media screen and (min-width: 768px) {
+  .section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .section-plans {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .sub-section {
+    padding-bottom: 50px;
+    width: 180px; }
+
+  #logo {
+    width: 400px; }
+
+  .container {
+    height: 300px; } }
+@media screen and (min-width: 1024px) {
+  .section {
+    width: 900px; }
+
+  .section-plans {
+    width: 800px; }
+
+  .sub-section {
+    width: 250px; } }
+
+/*# sourceMappingURL=style.css.map */
