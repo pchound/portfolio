@@ -1,2 +1,2 @@
 To start Sass
-sass --watch input.scss:style.css
+sass --watch style.scss:style.css

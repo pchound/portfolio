@@ -98,7 +98,6 @@ body {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background: #2a2a2a;
   background: -moz-linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
   background: -webkit-linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
   background: linear-gradient(0deg, #2a2a2a 0%, #535353 100%);
@@ -236,12 +235,70 @@ form {
   margin-bottom: 15px;
   font-size: .8em; }
 
+.resume-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+  word-break: break-word; }
+
+.resume-content h3 {
+  background-color: #424242;
+  padding: 10px; }
+
+.resume-content p, h5, h4, .title {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.resume-sub-section, .resume-sub-section-ed, .resume-sub-section-ed2 {
+  padding-top: 20px;
+  padding-bottom: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 20px; }
+
+.resume-sub-section {
+  background-color: #666666; }
+
+.resume-sub-section-ed {
+  background-color: #343775; }
+
+.resume-sub-section-ed2 {
+  background-color: #622f2f; }
+
+.title {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-align: center; }
+
+.jobs, .ed {
+  font-size: 0.9em;
+  margin-top: 1%; }
+
+.resume-sub-section h5, .resume-sub-section-ed2 h5 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center; }
+
+.resume-sub-section li, .resume-sub-section-ed2 li {
+  font-size: 1em; }
+
+.resume-sub-section p {
+  margin-left: -1%; }
+
 @media screen and (min-width: 380px) {
   .greeting {
     font-size: 3em; }
 
   .sub-section {
-    width: 250px; } }
+    width: 250px; }
+
+  .resume-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%; } }
 @media screen and (min-width: 768px) {
   .section {
     width: 90%;
@@ -263,7 +320,10 @@ form {
     width: 400px; }
 
   .container {
-    height: 300px; } }
+    height: 300px; }
+
+  .resume-sub-section li, .resume-sub-section-ed2 li {
+    font-size: 0.8em; } }
 @media screen and (min-width: 1024px) {
   .section {
     width: 900px; }

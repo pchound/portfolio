@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     font-size: 20px;
@@ -5,7 +7,8 @@ body {
     color: white;
 
     
-    background: rgb(42,42,42);
+
+    
     background: -moz-linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
     background: -webkit-linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
     background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
@@ -15,11 +18,7 @@ body {
 
   }
 
- 
-  .content
-  {
-   
-  }
+
   .greeting
   {
     margin-top: 50px;
@@ -46,6 +45,8 @@ body {
     border-radius: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
+
+
   }
   .section-plans
   {
@@ -115,11 +116,7 @@ body {
     display: block;
     
   }
-.paypal-button
-  {
-    
-   
-  }
+
 
   #logo
   {
@@ -207,3 +204,79 @@ body {
     margin-bottom: 15px;
     font-size: .8em;
   }
+  .resume-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    word-break: break-word;
+  }
+
+  .resume-content h3{
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+  }
+
+  .resume-content p, h5, h4, .title
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .resume-sub-section, .resume-sub-section-ed, .resume-sub-section-ed2
+  {
+    
+    padding-top: 20px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+    padding: 20px;
+  }
+
+  .resume-sub-section
+  {
+    background-color: rgb(102, 102, 102);
+  }
+
+  .resume-sub-section-ed
+  {
+    background-color: rgb(52, 55, 117);
+  }
+  .resume-sub-section-ed2
+  {
+    background-color: rgb(98, 47, 47);
+  }
+  
+.title
+  {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+
+  .jobs, .ed
+  {
+    font-size: 0.9em;
+    margin-top: 1%;
+  }
+
+  .resume-sub-section h5, .resume-sub-section-ed2 h5
+  {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+
+  .resume-sub-section li, .resume-sub-section-ed2 li
+  {
+    font-size: 1em;
+  }
+
+  .resume-sub-section p
+  {
+    margin-left: -1%;
+  }
+
+  
