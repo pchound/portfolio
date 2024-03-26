@@ -337,8 +337,7 @@ form {
   .resume-content {
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    width: 80%; } }
+    display: block; } }
 @media screen and (min-width: 768px) {
   .section {
     width: 90%;
