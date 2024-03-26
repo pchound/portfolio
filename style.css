@@ -133,13 +133,13 @@ body {
 
 .sub-section {
   background-color: white;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
   color: black;
   border-radius: 10px;
-  height: 150px;
-  padding-bottom: 30px; }
+  height: 180px; }
 
 .section:last-child {
   margin-bottom: 30px; }
@@ -152,10 +152,6 @@ body {
   color: white;
   font-size: 1.2em; }
 
-.sub-section p {
-  margin-left: 10%;
-  margin-right: 10%; }
-
 .sub-section li {
   margin-top: 5px;
   margin-bottom: 5px; }
@@ -166,6 +162,15 @@ body {
 .sub-section h3 {
   text-align: center;
   color: #a0a0a0; }
+
+.sub-section-link a {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  border: none; }
 
 form {
   text-align: center;
@@ -243,7 +248,10 @@ form {
 
 .resume-content h3 {
   background-color: #424242;
-  padding: 10px; }
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: -10px; }
 
 .resume-content p, h5, h4, .title {
   margin-left: 5%;
@@ -257,11 +265,21 @@ form {
   border-radius: 10px;
   padding: 20px; }
 
-.resume-sub-section {
-  background-color: #666666; }
+.resume-section-main {
+  border: 4px solid #afafaf;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  padding-top: 10px; }
 
-.resume-sub-section-ed {
-  background-color: #343775; }
+.resume-sub-section, .resume-sub-section-ed2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.resume-sub-section {
+  background-color: #595959; }
 
 .resume-sub-section-ed2 {
   background-color: #622f2f; }
@@ -282,10 +300,33 @@ form {
   text-align: center; }
 
 .resume-sub-section li, .resume-sub-section-ed2 li {
-  font-size: 1em; }
+  font-size: 1em;
+  width: 90%;
+  margin: auto; }
 
-.resume-sub-section p {
-  margin-left: -1%; }
+/*.resume-content h3:first-child
+{
+  margin-top: -30px;
+}*/
+.image-link-parent {
+  width: 70px;
+  display: block;
+  padding: auto; }
+
+.resume-content a, .resume-content a:visited {
+  font-size: 1.3em;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 5px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.resume-content a:hover, .resume-content a:active {
+  color: black; }
 
 @media screen and (min-width: 380px) {
   .greeting {
@@ -314,7 +355,8 @@ form {
 
   .sub-section {
     padding-bottom: 50px;
-    width: 180px; }
+    width: 180px;
+    height: 155px; }
 
   #logo {
     width: 400px; }

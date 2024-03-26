@@ -11,6 +11,7 @@
     <title>Joseph Web Designs - Home</title>
 </head>
     <body>
+      
       <div class="progress-bar" id="myBar"></div>
         <div class="header">
  
@@ -18,15 +19,12 @@
 
 <div class="container">
   <img src="img/placeholder.jpg" class="intro-img" alt="Joseph Garner-Web and graphic design">
-        
- 
          
           <ul class="side-nav">
             <li><span class="exit"></span></li>
               <li><a href="#">Home</a></li>
-              <li><a href="#" style="text-decoration: line-through;">Portfolio</a></li>
-              <li><a href="plans.html">Plans</a></li>
-              <li><a href="#" style="text-decoration: line-through;">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Resume</a></li>
           </ul>
          
             <div id="menu-icon">
@@ -41,38 +39,41 @@
         
         <div class="content">
           <h1 class="greeting">WELCOME</h1>
-          <div class="section">
-            <h2 class="section-header">Portfolio</h2>
-            <h4 class="section-h4"><a href="../phpmotors/index.php">PHP Motors</a></h4>
-          </div>
 
           <div class="section">
-            <h2 class="section-header">Plans</h2>
+            <h2 class="section-header">Portfolio Links</h2>
             <div class="section-plans">
+
               <div class="sub-section">
-                <h2 class="sub-section-header">Basic<br>$50</h2>
-                <h3>Coming Soon</h3>
-                <!--<ul>
-                  <li>Simple blog</li>
-                  <li>5 pages max</li>
-                </ul>-->
+                <h2 class="sub-section-header">PHP/MySQL</h2>
+                <div class="sub-section-link"><a href="https://www.facebook.com/profile.php?id=61555862650982"><img src="img/youtube2.png" alt="facebook" class="image-link"></a></div>
               </div>
 
               <div class="sub-section">
-                <h2 class="sub-section-header">Startup<br>$300</h2>
-                  <h3>Coming Soon</h3>
+                <h2 class="sub-section-header">React</h2>
+                <div class="sub-section-link"><a href="https://www.facebook.com/profile.php?id=61555862650982"><img src="img/youtube2.png" alt="facebook" class="image-link"></a></div>
               </div>
-
-              <div class="sub-section">
-                <h2 class="sub-section-header">Professional<br>$600</h2>
-                <h3>Coming Soon</h3>
+              
+              <div class="sub-section" >
+                <h2 class="sub-section-header">Social Media</h2>
+                
+                <div class="sub-section-link"><a href="https://www.facebook.com/profile.php?id=61555862650982"><img src="img/facebook3.png" alt="facebook" class="image-link"></a></div>
+              
               </div>
+           
           </div>
         </div>
-      </div>
+        
+        <?php
+          include("resume.php");
+        ?>
+
+      
+
+      </body>
         <div id="year_clock"></div>
         <script src="script.js"></script>  
-        <!-- Google tag (gtag.js) -->
+ 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C5L73FEDC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

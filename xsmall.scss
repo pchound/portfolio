@@ -14,8 +14,6 @@ body {
     background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(83,83,83,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a2a2a",endColorstr="#535353",GradientType=1);
     background-size: cover;
-    
-
   }
 
 
@@ -59,15 +57,13 @@ body {
   .sub-section
   {
     background-color: rgb(255, 255, 255);
-   
+   display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     color: black;
     border-radius: 10px;
-    height: 150px;
-    padding-bottom: 30px;
-    
+    height: 180px;
   }
 
   .section:last-child
@@ -87,8 +83,7 @@ body {
   
   .sub-section p
   {
-    margin-left: 10%;
-    margin-right: 10%;
+
   }
 
   .sub-section li
@@ -108,7 +103,21 @@ body {
     text-align: center;
     color:rgb(160, 160, 160);
   }
+  .sub-section-link a
+  {
+display: block;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
 
+  .sub-section-link img
+  {
+
+  }
 
   form
   {
@@ -204,6 +213,7 @@ body {
     margin-bottom: 15px;
     font-size: .8em;
   }
+
   .resume-content {
     margin-left: auto;
     margin-right: auto;
@@ -214,6 +224,9 @@ body {
   .resume-content h3{
     background-color: rgb(66, 66, 66);
     padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: -10px;
   }
 
   .resume-content p, h5, h4, .title
@@ -230,19 +243,33 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
-
     padding: 20px;
+  }
+
+  .resume-section-main
+  {
+    border: 4px solid #afafaf;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding-top: 10px;
+    
+  }
+
+  .resume-sub-section, .resume-sub-section-ed2
+  {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .resume-sub-section
   {
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(89, 89, 89);
+
   }
 
-  .resume-sub-section-ed
-  {
-    background-color: rgb(52, 55, 117);
-  }
   .resume-sub-section-ed2
   {
     background-color: rgb(98, 47, 47);
@@ -272,11 +299,34 @@ body {
   .resume-sub-section li, .resume-sub-section-ed2 li
   {
     font-size: 1em;
+    width: 90%;
+    margin: auto;
   }
-
-  .resume-sub-section p
+  /*.resume-content h3:first-child
   {
-    margin-left: -1%;
+    margin-top: -30px;
+  }*/
+  .image-link-parent
+  {
+    width: 70px;
+    display:block;
+    padding: auto;
   }
 
-  
+.resume-content a, .resume-content a:visited
+{
+  font-size: 1.3em;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 5px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resume-content a:hover, .resume-content a:active
+{
+  color: rgb(0, 0, 0)
+}
