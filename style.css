@@ -302,12 +302,11 @@ form {
 .resume-sub-section li, .resume-sub-section-ed2 li {
   font-size: 1em;
   width: 90%;
-  margin: auto; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
-/*.resume-content h3:first-child
-{
-  margin-top: -30px;
-}*/
 .image-link-parent {
   width: 70px;
   display: block;
